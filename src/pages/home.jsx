@@ -1,19 +1,19 @@
-import menu from "../components/menu.jsx"
-import footer from '../components/footer.jsx'
-import peliculas from "../components/Peliculas.jsx"
+import Menu from "../components/Menu.jsx"
+import Footer from "../components/Footer.jsx"
+import Peliculas from "../components/Peliculas.jsx"
 
-const home = () => {
+const Home = () => {
   return (
     
   
         
          <div>
-        <menu/>
+        <Menu/>
         <h1>Home</h1>
-        <peliculas/>
-        <footer/>
+        <Peliculas/>
+        <Footer/>
         </div>
   )
 }
 
-export default home
+export default Home

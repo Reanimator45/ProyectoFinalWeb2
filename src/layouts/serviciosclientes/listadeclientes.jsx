@@ -1,9 +1,9 @@
 import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
-import { dataBase } from "../../Config/DataBase";
+import { DataBase } from "../../Config/DataBase";
 
 
-const listadeclientes = () => {
+const ListaDeClientes = () => {
   const [servicios, setServicios] = useState([]);
 
   const mostrarServicios = async () => {
@@ -13,7 +13,7 @@ const listadeclientes = () => {
     setServicios(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
   const eliminarServicio = async (id) => {
-    const servicioEliminado = doc(dataBase, 'Clientes', id)
+    const servicioEliminado = doc(DataBase, 'Clientes', id)
     await deleteDoc(servicioEliminado)
     mostrarServicios()
   }
@@ -35,4 +35,4 @@ const listadeclientes = () => {
   );
 };
 
-export default listadeclientes;
+export default ListaDeClientes;

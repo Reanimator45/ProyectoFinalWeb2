@@ -1,7 +1,7 @@
 
-const menu = () => {
+const Menu = () => {
     return (
-      <section className='menu'>
+      <section className='Menu'>
         <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/clientes">Clientes</a></li>
@@ -15,4 +15,4 @@ const menu = () => {
     )
   }
   
-  export default menu
+  export default Menu

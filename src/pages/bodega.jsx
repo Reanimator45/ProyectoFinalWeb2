@@ -1,7 +1,7 @@
-import Menu from "../components/menu.jsx"
-import Footer from '../components/footer.jsx'
+import Menu from "../components/Menu.jsx"
+import Footer from '../components/Footer.jsx'
 import { collection, addDoc } from "firebase/firestore";
-import { dataBase,  } from "../Config/DataBase.jsx";
+import { DataBase,  } from "../Config/DataBase.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const Bodega = () => {
   const agregarBodega= async()=>{
 
 
-    const servicioCollection = collection(dataBase,"Bodegas");
+    const servicioCollection = collection(DataBase,"Bodegas");
     const servicio = {
       nombre,
       urlImagen,

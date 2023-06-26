@@ -1,10 +1,10 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import clientes from "./pages/clientes";
-import empleados from "./pages/empleados";
-import productos from './Pages/productos';
-import proveedores from './pages/proveedores';
-import bodega from './pages/bodega';
-import home from './pages/home';
+import Clientes from "./pages/Clientes";
+import Empleados from "./pages/Empleados";
+import Productos from './Pages/Productos';
+import Proveedores from './pages/Proveedores';
+import Bodega from './pages/Bodega';
+import Home from './pages/Home';
 import './App.css'
 
 
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
     element: <Proveedores />
   },
   {
-    path: '/Boveda',
-    element: <Boveda/>
+    path: '/Bodega',
+    element: <Bodega/>
   }
 ])
 function App() {

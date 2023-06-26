@@ -1,4 +1,4 @@
-import Menu from "../components/menu.jsx"
+import Menu from "../components/Menu.jsx"
 import Footer from '../components/Footer.jsx'
 
 import { collection, addDoc } from "firebase/firestore";

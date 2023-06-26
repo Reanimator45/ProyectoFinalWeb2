@@ -1,19 +1,19 @@
-import generarclientes from "../layouts/serviciosclientes/generarclientes.jsx"
+import GenerarClientes from "../layouts/serviciosclientes/GenerarClientes.jsx"
 
-import menu from "../components/menu.jsx"
-import footer from '../components/footer.jsx'
-import listadeclientes from "../layouts/serviciosclientes/listadeclientes.jsx"
-const clientes = () => {
+import Menu from "../components/Menu.jsx"
+import Footer from '../components/Footer.jsx'
+import ListaDeClientes from "../layouts/serviciosclientes/ListaDeClientes.jsx"
+const Clientes = () => {
   
   return (
     <div>
-      <menu/>
+      <Menu/>
 
-      <generarclientes/>
-      <listadeclientes/>
-      <footer/>
+      <GenerarClientes/>
+      <ListaDeClientes/>
+      <Footer/>
       </div>
   )
 }
 
-export default clientes
+export default Clientes

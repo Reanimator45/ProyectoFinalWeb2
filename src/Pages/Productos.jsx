@@ -1,9 +1,9 @@
-import Menu from "../Componentes/menu.jsx";
-import Footer from '../Componentes/Footer.jsx';
+import Menu from "../components/Menu.jsx";
+import Footer from '../components/Footer.jsx';
 import { collection,addDoc } from "firebase/firestore";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { dataBase } from "../Config/DataBase.jsx";
+import { DataBase } from "../Config/DataBase.jsx";
 
 
 const Productos = () => {
@@ -18,7 +18,7 @@ const returnListado=useNavigate();
 const agregarProducto=async()=>{
 
 
-  const servicioCollection=collection(dataBase,"Productos");
+  const servicioCollection=collection(DataBase,"Productos");
   const servicio={
     nombre,
     cantidad,

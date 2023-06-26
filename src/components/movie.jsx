@@ -1,5 +1,5 @@
 
-const movie = ({movie}) => {
+const Movie = ({movie}) => {
     return (
       <div>
           <h5>{movie.title}</h5>
@@ -8,4 +8,4 @@ const movie = ({movie}) => {
     )
   }
   
-  export default movie
+  export default Movie

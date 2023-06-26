@@ -12,9 +12,9 @@ useEffect(() => {
 }, []);
 const fetchPopular = async () => {
   const data = await fetch(url);
-  const movies = await data.json();
-  console.log(movies);
-  setPopular(movies.results);
+  const Movies = await data.json();
+  console.log(Movies);
+  setPopular(Movies.results);
 };
 
 

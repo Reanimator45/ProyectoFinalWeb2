@@ -1,7 +1,7 @@
-import Menu from "../Componentes/menu.jsx"
-import Footer from '../Componentes/Footer.jsx'
+import Menu from "../components/Menu.jsx"
+import Footer from '../components/Footer.jsx'
 import { collection, addDoc } from "firebase/firestore";
-import { dataBase,  } from "../Config/DataBase.jsx";
+import { DataBase,  } from "../Config/DataBase.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const Proveedores = () => {
@@ -21,7 +21,7 @@ const Proveedores = () => {
   const agregarProveedor = async()=>{
 
 
-    const servicioCollection = collection(dataBase,"Prooveedores");
+    const servicioCollection = collection(DataBase,"Prooveedores");
     const servicio={
       nombre,
       direccion,
@@ -89,4 +89,4 @@ const Proveedores = () => {
   )
 }
 
-export default Prooveedores
+export default Proveedores

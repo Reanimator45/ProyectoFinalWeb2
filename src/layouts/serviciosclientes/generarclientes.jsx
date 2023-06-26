@@ -1,9 +1,9 @@
 import { collection, addDoc } from "firebase/firestore";
-import { dataBase } from "../../Config/DataBase";
+import { DataBase } from "../../Config/DataBase";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const generarclientes = () => {
+const GenerarClientes = () => {
 
     const [nombre, setNombre] = useState("");
   const [documento, setDocumento] = useState("");
@@ -18,7 +18,7 @@ const generarclientes = () => {
   const agregarCliente = async () => {
    
     
-    const servicioCollection = collection(dataBase, "Clientes");
+    const servicioCollection = collection(DataBase, "Clientes");
     const servicio = {
       nombre,
       documento,
@@ -84,4 +84,4 @@ const generarclientes = () => {
   )
 }
 
-export default generarclientes
+export default GenerarClientes
