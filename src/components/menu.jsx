@@ -1,7 +1,7 @@
 
 const Menu = () => {
     return (
-      <section className='Menu'>
+      <section className='Menus'>
         <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/clientes">Clientes</a></li>
@@ -12,6 +12,7 @@ const Menu = () => {
   
   </ul>
       </section>
+      
     )
   }
   

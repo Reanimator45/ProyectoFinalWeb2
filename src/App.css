@@ -13,12 +13,13 @@ a {
   padding: 10px;
 }
 .Footer{
-  background-color: black;
+  background-color: #2f4f4f;
   color :white;
 }
 .pelis {
   margin: 5% 5%;
   text-align: center;
+  color:#fff;
 }
 
 .App {
@@ -46,4 +47,70 @@ form{
   width: 50%;
   align-content: center;
  
+}
+
+body {
+  background-color: #2f4f4f;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.movie {
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.movie img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.movie p {
+  font-size: 14px;
+  color: #e71313;
+}
+
+
+section {
+color: #fff;
+text-align: center;
+background-color: #2f4f4f;
+outline: none;
+}
+
+a {
+  text-align: center;
+  outline: none;
+  color: #fff;
 }
