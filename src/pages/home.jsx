@@ -1,6 +1,9 @@
 import Menu from "../components/Menu.jsx"
 import Footer from "../components/Footer.jsx"
 import Peliculas from "../components/Peliculas.jsx"
+import Slider from "../components/slider.jsx"
+
+
 
 const Home = () => {
   return (
@@ -9,7 +12,8 @@ const Home = () => {
         
          <div>
         <Menu/>
-        <h1>Home</h1>
+        <h1>Nuestra Coleccion</h1>
+        <Slider/>
         <Peliculas/>
         <Footer/>
         </div>
