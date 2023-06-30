@@ -1,4 +1,4 @@
-import Menu from "../components/Menu.jsx"
+import Menu from "../components/menu.jsx"
 import Footer from "../components/Footer.jsx"
 import Peliculas from "../components/Peliculas.jsx"
 import Slider from "../components/slider.jsx"

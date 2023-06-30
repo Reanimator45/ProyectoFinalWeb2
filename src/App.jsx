@@ -1,10 +1,10 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Clientes from "./pages/Clientes";
-import Empleados from "./pages/Empleados";
+import Clientes from "./Pages/clientes";
+import Empleados from "./Pages/Empleados";
 import Productos from './Pages/Productos';
-import Proveedores from './pages/Proveedores';
-import Bodega from './pages/Bodega';
-import Home from './pages/Home';
+import Proveedores from './Pages/Proveedores';
+import Bodega from './Pages/bodega';
+import Home from './Pages/home.jsx';
 import './App.css'
 
 
